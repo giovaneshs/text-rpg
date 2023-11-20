@@ -387,6 +387,7 @@ def Game(stdscr):
     stdscr.border()
     stdscr.refresh()
 
+    time.sleep(1)
     jogar_forca(compreensao,stdscr)
 
     stdscr.border()
@@ -568,7 +569,19 @@ def Game(stdscr):
     stdscr.border()
     stdscr.refresh()
 
-    jogo_verdadeiro_falso()
+    afirmacoes = [
+        'Solidariedade Mecânica: Neste tipo de solidariedade, os membros\n'
+        'da sociedade são interdependentes e especializados em funções específicas.',
+        'Consciência Coletiva: É o conjunto de crenças, valores e normas\n'
+        'compartilhados por membros de uma sociedade.',
+        'Fato Social: Para Durkheim, são maneiras de agir, pensar e sentir\n'
+        'que exercem controle sobre os indivíduos.',
+        'Anomia: É uma condição de ordem social resultante da falta de normas\n'
+        'ou regras claras.'
+    ]
+
+
+    jogo_verdadeiro_falso(afirmacoes,compreensao,stdscr)
     stdscr.clear()
     
     stdscr.border()
@@ -639,7 +652,13 @@ def Game(stdscr):
     stdscr.border()
     stdscr.refresh()
 
-    jogo_adivinhar()
+    conceitos = [
+    ("Solidariedade Mecânica", "Neste tipo de solidariedade, os membros da sociedade são unidos pela semelhança e conformidade."),
+    ("Consciência Coletiva", "É o conjunto de crenças, valores e normas compartilhados por membros de uma sociedade."),
+    ("Fato Social", "Para Durkheim, são maneiras de agir, pensar e sentir que exercem controle sobre os indivíduos."),
+    ("Anomia", "É uma condição de desordem social resultante da falta de normas ou regras claras.")]
+
+    jogo_adivinhar(compreensao, conceitos, stdscr)
     stdscr.clear()
 
     time.sleep(2)
@@ -751,16 +770,10 @@ def Game(stdscr):
         'minha visão do meu mundo nunca mais foi a mesma desde o momento que recebi a'
         'carta, agora meu trabalho é proliferar essa visão, em busca de uma melhor'
         'sociedade. Talvez sozinha não tenha a força para isso, mas com a união de uma'
-        'classe no futuro, teremos a força para tal.\n\n'
-        'Mas, enquanto essa força não chega, hora de me arrumar e ir trabalhar.\n'
+        'classe no futuro, teremos a força para tal.\n'
     )
 
     Diario(diario61, stdscr)
-    stdscr.border()
-    stdscr.refresh()
-
-    jogo_associar_conceitos()
-    stdscr.clear()
 
     time.sleep(2)
     stdscr.border()
