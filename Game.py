@@ -130,7 +130,7 @@ def Game(stdscr):
     'Então, entrei em minha casa e, quebrando minha rotina, comecei a ler a misteriosa \ncarta'
     )
 
-    #Diario(diario1,stdscr)
+    Diario(diario1,stdscr)
     stdscr.border()
     stdscr.refresh()
 
@@ -164,7 +164,7 @@ def Game(stdscr):
     'sociedade, mas me deixou intrigada mesmo assim…\n'
     )
 
-    #Diario(diario11,stdscr)
+    Diario(diario11,stdscr)
     stdscr.border()
     mensagem = curses.newwin(1, 15, 14, 50)
     stdscr.refresh()
@@ -187,7 +187,7 @@ def Game(stdscr):
         'Emily\n'
     )
 
-    #Diario(diario12,stdscr)
+    Diario(diario12,stdscr)
     stdscr.border()
     mensagem = curses.newwin(1, 15, 14, 50)
     stdscr.refresh()
@@ -205,7 +205,7 @@ def Game(stdscr):
         'Ao anoitecer, deito em minha cama e sigo com os vagos pensamentos. O melhor a\nse fazer é dormir…\n'
     )
     
-    #Diario(diario13,stdscr)
+    Diario(diario13,stdscr)
     
     stdscr.border()
     stdscr.refresh()
@@ -222,6 +222,7 @@ def Game(stdscr):
     stdscr.refresh()
     
     time.sleep(2)
+    stdscr.clear()
     stdscr.border()
     mensagem = curses.newwin(1, 15, 14, 50)
     stdscr.refresh()
@@ -244,7 +245,7 @@ def Game(stdscr):
         'Ao chegar no estabelecimento de trabalho, eu tento fazer algo em relação ao que\nfalaram na carta, talvez se eu focar em fazer só a parte de organização… vamos\nver…\n'
     )
 
-    #Diario(diario2,stdscr)
+    Diario(diario2,stdscr)
     stdscr.border()
     mensagem = curses.newwin(1, 15, 14, 50)
     stdscr.refresh()
@@ -263,7 +264,7 @@ def Game(stdscr):
         'Chegando em casa me deparei com outra carta, ansiosamente, adentrei a minha\nresidência e comecei a ler…\n'
     )
 
-    #Diario(diario22,stdscr)
+    Diario(diario22,stdscr)
     stdscr.border()
     stdscr.refresh()
 
@@ -281,7 +282,7 @@ def Game(stdscr):
         'Grupo SKT"\n'
     )
 
-    #Carta(carta2, stdscr)
+    Carta(carta2, stdscr)
     stdscr.border()
     mensagem = curses.newwin(1, 15, 14, 50)
     stdscr.refresh()
@@ -304,7 +305,7 @@ def Game(stdscr):
         'uma resposta para eles.\n'
     )
 
-    #Diario(diario23,stdscr)
+    Diario(diario23,stdscr)
     stdscr.border()
     mensagem = curses.newwin(1, 15, 14, 50)
     stdscr.refresh()
@@ -337,7 +338,7 @@ def Game(stdscr):
     )
 
 
-    #Diario(diario24,stdscr)
+    Diario(diario24,stdscr)
     stdscr.border()
     stdscr.refresh()
 
@@ -356,6 +357,7 @@ def Game(stdscr):
 
 
     time.sleep(2)
+    stdscr.clear()
     stdscr.border()
     mensagem = curses.newwin(1, 15, 14, 50)
     stdscr.refresh()
@@ -380,12 +382,12 @@ def Game(stdscr):
         'Hora de ir trabalhar.\n'
     )
 
-    #Diario(diario3,stdscr)
+    Diario(diario3,stdscr)
     stdscr.clear()
     stdscr.border()
     stdscr.refresh()
 
-    #jogar_forca(compreensao,stdscr)
+    jogar_forca(compreensao,stdscr)
 
     stdscr.border()
     mensagem = curses.newwin(1, 15, 14, 50)
@@ -421,7 +423,7 @@ def Game(stdscr):
         'Em casa, recebi mais uma carta do grupo...\n'
     )
 
-    #Diario(diario31,stdscr)
+    Diario(diario31,stdscr)
     stdscr.border()
     stdscr.refresh()
 
@@ -456,7 +458,7 @@ def Game(stdscr):
         'Grupo SKT"\n'
     )
 
-    #Carta(carta3, stdscr)
+    Carta(carta3, stdscr)
     stdscr.border()
     mensagem = curses.newwin(1, 15, 14, 50)
     stdscr.refresh()
@@ -475,7 +477,7 @@ def Game(stdscr):
         'que agora acredito que consiga dormir de uma melhor forma.\n'
     )
 
-    #Diario(diario32, stdscr)
+    Diario(diario32, stdscr)
     stdscr.border()
     mensagem = curses.newwin(1, 15, 14, 50)
     stdscr.refresh()
@@ -517,7 +519,7 @@ def Game(stdscr):
         'Emily"\n'
     )
 
-    #Diario(diario33, stdscr)
+    Diario(diario33, stdscr)
     stdscr.border()
     stdscr.refresh()
 
@@ -536,6 +538,7 @@ def Game(stdscr):
 
 
     time.sleep(2)
+    stdscr.clear()
     stdscr.border()
     mensagem = curses.newwin(1, 15, 14, 50)
     stdscr.refresh()
@@ -561,7 +564,7 @@ def Game(stdscr):
         'confesso que era o esperado…\n\n'
     )
 
-    #Diario(diario4, stdscr)
+    Diario(diario4, stdscr)
     stdscr.border()
     stdscr.refresh()
 
@@ -590,7 +593,7 @@ def Game(stdscr):
         'tinha mais outro dia a frente.\n'
     )
 
-    #Diario(diario41, stdscr)
+    Diario(diario41, stdscr)
     stdscr.border()
     stdscr.refresh()
 
@@ -608,6 +611,7 @@ def Game(stdscr):
     stdscr.refresh()
 
     time.sleep(2)
+    stdscr.clear()
     stdscr.border()
     mensagem = curses.newwin(1, 15, 14, 50)
     stdscr.refresh()
@@ -631,7 +635,7 @@ def Game(stdscr):
         'Faz algum tempo que não recebo mais cartas… Bem, hora de se arrumar e ir trabalhar.\n'
     )
 
-    #Diario(diario5, stdscr)
+    Diario(diario5, stdscr)
     stdscr.border()
     stdscr.refresh()
 
@@ -664,7 +668,7 @@ def Game(stdscr):
         'Agora é descansar e se preparar para amanhã.\n'
     )
 
-    #Diario(diario51, stdscr)
+    Diario(diario51, stdscr)
     stdscr.border()
     stdscr.refresh()
 
@@ -680,6 +684,7 @@ def Game(stdscr):
     stdscr.refresh()
 
     time.sleep(2)
+    stdscr.clear()
     stdscr.border()
     mensagem = curses.newwin(1, 15, 14, 50)
     stdscr.refresh()
@@ -697,7 +702,7 @@ def Game(stdscr):
         'Durante o meu sono, recebi mais uma carta, que pelo visto parece ser a última..\n'
     )
 
-    #Diario(diario6,stdscr)
+    Diario(diario6,stdscr)
     stdscr.border()
     stdscr.refresh()
 
@@ -726,7 +731,7 @@ def Game(stdscr):
         'Grupo SKT”\n'
     )
 
-    #Carta(carta6, stdscr)
+    Carta(carta6, stdscr)
 
     time.sleep(2)
     stdscr.border()
@@ -750,7 +755,7 @@ def Game(stdscr):
         'Mas, enquanto essa força não chega, hora de me arrumar e ir trabalhar.\n'
     )
 
-    #Diario(diario61, stdscr)
+    Diario(diario61, stdscr)
     stdscr.border()
     stdscr.refresh()
 
@@ -781,7 +786,7 @@ def Game(stdscr):
         'Hora de descansar.\n'
     )
 
-    #Diario(diario62, stdscr)
+    Diario(diario62, stdscr)
     stdscr.border()
     stdscr.refresh()
 
@@ -799,6 +804,7 @@ def Game(stdscr):
     stdscr.refresh()
 
     time.sleep(2)
+    stdscr.clear()
     stdscr.border()
     mensagem = curses.newwin(1, 15, 14, 50)
     stdscr.refresh()
@@ -832,11 +838,11 @@ def Game(stdscr):
         'desequilíbrio  na divisão das tarefas.\n'
     )
 
-    #Diario(diario7, stdscr)
+    Diario(diario7, stdscr)
     stdscr.border()
     stdscr.refresh()
 
-    #Carta(decididor_final(), stdscr)
+    Carta(decididor_final(), stdscr)
     stdscr.border()
     stdscr.refresh()
 
