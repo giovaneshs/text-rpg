@@ -41,6 +41,7 @@ def Diario(texto, stdscr):
 
 def Carta(texto, stdscr):
     carta = curses.newpad(100, 100)
+
     carta.clear()
  
     carta.addstr(texto, curses.A_ITALIC)
@@ -52,6 +53,10 @@ def Carta(texto, stdscr):
     startLine = 0
     finalLine = 20
     lineCounter = texto.count("\n")
+
+    botao = curses.newwin(1, 35, 25, 70)
+    botao.addstr("[SETAS]Mover")
+    botao.refresh()
     
     while True:
         key = stdscr.getkey()
@@ -67,8 +72,8 @@ def Carta(texto, stdscr):
                     finalLine = lineCounter
                 carta.refresh(startLine, 0, 4, 15, 23, 100)
                 if finalLine == lineCounter:
-                    botao = curses.newwin(1, 15, 24, 85)
-                    botao.addstr("[E]Próximo")
+                    botao.clear()
+                    botao.addstr("[SETAS]Mover   [E]Próximo")
                     botao.refresh()
             case "KEY_UP":
                 startLine -=1
@@ -140,7 +145,7 @@ def Game(stdscr):
     'Com esperança, Grupo SKT"\n'
     )
     
-    #Carta(carta1, stdscr)
+    Carta(carta1, stdscr)
     stdscr.border()
     mensagem = curses.newwin(1, 15, 14, 50)
     stdscr.refresh()

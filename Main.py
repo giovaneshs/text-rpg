@@ -16,6 +16,8 @@ def main(stdscr):
 
         title_win = curses.newwin(10, 70, 2, 26)
         startMenu_win = curses.newwin(7, 11, 17, 53)
+        legenda = curses.newwin(1, 35, 25, 70)
+        
         stdscr.refresh()
 
         title_win.addstr(1,1, "      ██     ▀███▄   ▀███▀ ▄▄█▀▀██▄ ▀████▄     ▄███▀████▀███▀▀▀███ ")
@@ -27,15 +29,19 @@ def main(stdscr):
         title_win.addstr(7,1, "▄███▄   ▄████▄███▄    ██   ▀▀████▀▀ ▄███▄ ▀▀  ▄████▄████▄██████████")
         title_win.refresh()
 
+        legenda.addstr("[SETAS]Mover   [E]Selecionar")
+        legenda.refresh()
+
         startMenu_win.clear()
         startMenu_win.border()
         startMenu_win.addstr(2, 1, "  JOGAR  ", curses.A_STANDOUT)
         startMenu_win.addstr(4, 1, "  SAIR   ", curses.A_BOLD)
         startMenu_win.refresh()
-        key = stdscr.getkey()
+        
 
         option = 1
         while True:
+            key = stdscr.getkey()
             match key.upper():
                 case "KEY_DOWN":
                     option = 2
